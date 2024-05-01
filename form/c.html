@@ -10,34 +10,35 @@
 <body>
   <div class="wrapper">
     <h2><a>ЗАПИСЬ НА ОБУЧЕНИЕ</a></h2>
-    <form action="#">
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="57006db4-90ee-4d2e-900d-9468cf6f11ca">
       <div class="input-box">
-        <input type="text" placeholder="Напишите свое Ф.И.О" required>
+        <input type="text" name = "Name" id="Name" autocomplete="off" placeholder="Напишите свое Ф.И.О" required>
       </div>
       <div class="input-box">
-        <input type="text" placeholder="Напишите свой номер телефона" required>
+        <input type="number" name="number" id="number" autocomplete="off" placeholder="Напишите свой номер телефона" required>
       </div>
       <div class="input-box">
-        <input type="text" placeholder="Напишите свой адрес электронной почты" required>
+        <input type="email" name="email" id="email" autocomplete="off"  placeholder="Напишите свой адрес электронной почты" required>
       </div>
       <div class="input-box">
-        <input type="text" placeholder="Ваш username в Instagram" required>
+        <input type="username" name="username" id="username" autocomplete="off" placeholder="Ваш username в Instagram" required>
       </div>
       <div class="input-box">
-        <select required>
+        <select type="select" name="teacher" id="teacher" autocomplete="off" required>
           <option value="" class="select">Выберите преподавателя</option>
-          <option value="Преподаватель 1">Анастасия</option>
-          <option value="Преподаватель 2">Батухан</option>
-          <option value="Преподаватель 2">Динара</option>
-          <option value="Преподаватель 2">Дила</option>
+          <option value="Анастасия">Анастасия</option>
+          <option value="Батухан">Батухан</option>
+          <option value="Динара">Динара</option>
+          <option value="Дила">Дила</option>
           <!-- Добавьте другие варианты, если необходимо -->
         </select>
       </div>
       <div class="input-box">
-        <select required>
+        <select type="tarif" name="tarif" id="tarif" required>
           <option value="" class="select2">Выберите Тариф</option>
-          <option value="Преподаватель 1">Тариф 199$</option>
-          <option value="Преподаватель 2">Тариф 149$</option>
+          <option value="Тариф 199$">Тариф 199$</option>
+          <option value="Тариф 149$">Тариф 149$</option>
           <!-- Добавьте другие варианты, если необходимо -->
         </select>
       </div>
